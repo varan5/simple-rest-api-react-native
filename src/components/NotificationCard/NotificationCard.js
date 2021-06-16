@@ -5,19 +5,20 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
-const Notification = ({title, subtitle, time, image}) => {
+const Notification = ({title, status, id}) => {
+  console.log(status);
   return (
     <TouchableOpacity>
       <View style={styles.topContainerStyle}>
         <View style={styles.borderLineStyle}></View>
         <View style={styles.containerStyle}>
-          <Image source={image} style={styles.imageStyle} />
-
           <View style={styles.notificationBodyViewStyle}>
-            <Text style={styles.titleTextStyle}>{title}</Text>
+            <Text style={styles.titleTextStyle}>TITLE: {title}</Text>
             <View style={styles.subtitleAndTimeViewStyle}>
-              <Text style={styles.subTitleTextStyle}>{subtitle}</Text>
-              <Text style={styles.timeTextStyle}>{time}</Text>
+              <Text style={styles.subTitleTextStyle}>
+                STATUS: {status ? 'Completed' : 'Incomplete'}
+              </Text>
+              <Text style={styles.timeTextStyle}>Todo ID: {id}</Text>
             </View>
           </View>
         </View>

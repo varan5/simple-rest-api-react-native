@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: wp('5'),
     fontWeight: 'bold',
+    marginLeft: wp('30'),
   },
 });
 
