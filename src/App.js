@@ -1,5 +1,6 @@
 import React from 'react';
 import DataDisplayScreen from './screens/DataDisplay/DataDisplayScreen';
+import PurchaseCoinsScreen from './screens/PurchaseCoins/PurchaseCoinsScreen';
 import {
   SafeAreaView,
   ScrollView,
@@ -13,7 +14,8 @@ import {
 const App = () => {
   return (
     <SafeAreaView style={styles.appContainerStyle}>
-      <DataDisplayScreen />
+      {/* <DataDisplayScreen /> */}
+      <PurchaseCoinsScreen />
     </SafeAreaView>
   );
 };
