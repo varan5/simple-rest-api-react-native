@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, FlatList, TouchableOpacity} from 'react-native';
+import {Text, View, FlatList, TouchableOpacity, Image} from 'react-native';
 import styles from './PurchaseCoinsScreenStyle';
 import PurchaseCoinsCard from '../../components/PurchaseCoinsCard/PurchaseCoinsCard';
 
@@ -29,8 +29,12 @@ const PurchaseCoinsScreen = () => {
   return (
     <View style={styles.containerStyle}>
       <View style={styles.headerContainerStyle}>
-        <TouchableOpacity
-          onPress={() => navigation.goBack()}></TouchableOpacity>
+        <TouchableOpacity>
+          <Image
+            style={styles.goBackIconStyle}
+            source={require('../../../assets/images/left-arrow.png')}
+          />
+        </TouchableOpacity>
         <Text style={styles.headerTitleTextStyle}>
           Purchase Pawsibilities Coins
         </Text>

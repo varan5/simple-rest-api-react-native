@@ -24,9 +24,8 @@ const styles = StyleSheet.create({
   },
   headerTitleTextStyle: {
     color: 'white',
-    fontSize: wp('4'),
+    fontSize: wp('4.4'),
     fontWeight: 'bold',
-    marginLeft: wp('20'),
   },
 });
 
