@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
     marginBottom: hp('2'),
   },
   goBackIconStyle: {
-    height: hp('3.5'),
-    width: wp('7'),
+    height: hp('3'),
+    width: wp('6'),
     marginLeft: wp('3.5'),
     marginRight: wp('6'),
   },

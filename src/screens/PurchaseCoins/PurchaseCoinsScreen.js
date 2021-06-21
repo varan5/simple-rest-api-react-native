@@ -5,18 +5,22 @@ import PurchaseCoinsCard from '../../components/PurchaseCoinsCard/PurchaseCoinsC
 
 const purchaseData = [
   {
+    key: 1,
     points: 100,
     price: 49,
   },
   {
+    key: 2,
     points: 500,
     price: 199,
   },
   {
+    key: 3,
     points: 1000,
     price: 399,
   },
   {
+    key: 4,
     points: 2000,
     price: 799,
   },

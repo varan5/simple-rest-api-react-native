@@ -6,7 +6,6 @@ import {
 } from 'react-native-responsive-screen';
 
 const PurchaseCoinsCard = ({points, price}) => {
-  console.log(points);
   return (
     <TouchableOpacity>
       <View style={styles.containerStyle}>
@@ -28,10 +27,10 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    backgroundColor: 'teal',
-    margin: wp('3'),
+    backgroundColor: '#202020',
+    margin: wp('2.8'),
     borderRadius: wp('2'),
-    height: hp('4.6'),
+    height: hp('5.3'),
   },
   pointsViewStyle: {
     display: 'flex',
@@ -41,16 +40,16 @@ const styles = StyleSheet.create({
   coinImageStyle: {
     height: hp('3'),
     width: wp('6'),
-    marginTop: hp('1'),
+    marginTop: hp('1.2'),
   },
   pointsTextStyle: {
     color: 'white',
-    marginTop: hp('1.3'),
+    marginTop: hp('1.6'),
     marginLeft: wp('1.5'),
   },
   priceTextStyle: {
     color: 'white',
-    marginTop: hp('1.3'),
+    marginTop: hp('1.5'),
     marginRight: wp('3'),
   },
 });
